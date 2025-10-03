@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+mkdir -p reports
+bandit -r src -f json -o reports/bandit.json

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+mkdir -p reports
+checkov -d infra -o json > reports/checkov.json

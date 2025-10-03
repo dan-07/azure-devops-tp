@@ -1,0 +1,9 @@
+terraform {
+  required_version = ">= 1.5.0"
+  backend "azurerm" {
+    resource_group_name  = "rg-devops-dk001"
+    storage_account_name = "stdevopsdk001"
+    container_name       = "tfstate"
+    key                  = "azure-devops-tp.tfstate"
+  }
+}
